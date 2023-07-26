@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --cyan: hsl(180, 66%, 49%);
+  --dark-violet: hsl(257, 27%, 26%);
+  --red: hsl(0, 87%, 67%);
+  --gray: hsl(0, 0%, 75%);
+  --grayish-violet: hsl(257, 7%, 63%);
+  --dark-blue: hsl(255, 11%, 22%);
+  --very-dark-violet: hsl(260, 8%, 14%);
+  --light-gray: #eee;
+  --body-size: 18px;
+
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 120rem;
+  margin: auto;
+}
+
+header .container {
+  display: flex;
+  padding-top: 4rem;
+  align-items: center;
+}
+
+.header-buttons {
+  margin-left: auto;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  list-style: none;
+  font-weight: 700;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--grayish-violet);
+  border-radius: 99rem;
+  padding: 1rem 2.5rem;
+}
+
+header a:hover {
+  color: black;
+}
+
+header a:focus {
+  outline: 2px dotted var(--cyan);
+}
+
+.sign-up {
+  background-color: var(--cyan);
+  color: white;
+  transition: opacity 0.2s;
+}
+
+.sign-up:hover {
+  color: white;
+  opacity: 0.6;
+}
+
+.sign-up:focus {
+  outline-offset: 0.2rem;
+}
+
+.hero .container {
+  display: flex;
+  min-height: 70rem;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.hero-ilustration {
+  width: 65rem;
+}
+
+.hero h1 {
+  font-size: 7rem;
+  max-width: 13ch;
+  color: var(--dark-blue);
+  letter-spacing: -0.2rem;
+  line-height: 1.1;
+}
+
+.hero p {
+  max-width: 45ch;
+  color: var(--grayish-violet);
+  line-height: 1.7;
+}
+
+.hero button {
+  margin-top: 2.5rem;
+  background-color: var(--cyan);
+  border-radius: 99rem;
+  padding: 1.4rem 4.5rem;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: inherit;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  opacity: 0.6;
+}
+
+.short-links {
+  background-color: var(--light-gray);
+}
+
+.short-links form {
+  display: flex;
+  background-image: url(./images/bg-shorten-desktop.svg);
+  background-color: var(--dark-violet);
+  padding: 4rem;
+  border-radius: 0.8rem;
+  transform: translateY(-50%);
+  margin-bottom: -5rem;
+}
+
+.short-links input,
+.short-links button {
+  border-radius: 0.8rem;
+  padding: 1.3rem 2.5rem;
+  font-size: inherit;
+}
+
+.short-links input {
+  flex-grow: 1;
+}
+
+.short-links button {
+  background-color: var(--cyan);
+  border: none;
+  color: white;
+  margin-left: 2rem;
+}
+
+.stadictics {
+  background-color: var(--light-gray);
+}
+
+.stadictics .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 80rem;
+}
+
+.stadictics-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 55ch;
+}
+
+.stadictics h2 {
+  font-size: 3.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.stadictics p {
+  color: var(--grayish-violet);
+}
+
+.cards {
+  display: flex;
+  gap: 3rem;
+  height: 50rem;
+}
+
+.cards article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  width: 40rem;
+  height: 30rem;
+}
+
+.cards article div {
+  display: flex;
+  min-height: 22rem;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+  margin-top: -3rem;
+}
+
+.cards article img {
+  transform: translateY(-50%);
+  margin-left: 2rem;
+  background-color: var(--dark-violet);
+  padding: 2rem;
+  border-radius: 99rem;
+}
+
+.card-2 {
+  transform: translateY(4rem);
+}
+
+.card-3 {
+  transform: translateY(8rem);
+}
+
+.get-started {
+  background-image: url(./images/bg-shorten-desktop.svg);
+  background-color: var(--dark-violet);
+}
+
+.get-started .container {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 2em;
+  min-height: 23rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.get-started h2 {
+  font-size: 3.5rem;
+  color: white;
+}
