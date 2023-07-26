@@ -229,6 +229,11 @@ header a:focus {
 .get-started {
   background-image: url(./images/bg-shorten-desktop.svg);
   background-color: var(--dark-violet);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 .get-started .container {
@@ -243,4 +248,79 @@ header a:focus {
 .get-started h2 {
   font-size: 3.5rem;
   color: white;
+}
+
+.get-started button {
+  background-color: var(--cyan);
+  border: none;
+  color: white;
+  border-radius: 99rem;
+  padding: 1.2rem 4rem;
+  margin-top: 1rem;
+  font-size: inherit;
+}
+
+footer {
+  background-color: var(--very-dark-violet);
+}
+
+footer .container {
+  display: flex;
+
+  align-items: center;
+  min-height: 40rem;
+}
+
+.container-footer {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+footer img {
+  fill: var(--cyan) !important;
+}
+
+footer .info-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 15rem;
+}
+
+footer p {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+footer li {
+  list-style: none;
+  font-weight: 500;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--grayish-violet);
+}
+
+.container-socials {
+  display: flex;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.socials img :hover {
+  color: var(--cyan) !important;
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
 }
