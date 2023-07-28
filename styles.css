@@ -33,6 +33,10 @@ button {
   margin: auto;
 }
 
+.logo {
+  color: #34313d;
+}
+
 header .container {
   display: flex;
   padding-top: 4rem;
@@ -155,6 +159,42 @@ header a:focus {
   border: none;
   color: white;
   margin-left: 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.short-links button:hover {
+  opacity: 0.6;
+  transform: scale(1.05);
+}
+
+.short-links button:active {
+  transform: scale(0.9);
+}
+
+.card-link {
+  display: flex;
+  background-color: white;
+  padding: 1rem 4rem;
+  align-items: center;
+}
+
+.card-link:not(:first-of-type) {
+  margin-top: 2rem;
+}
+
+.card-link p {
+  color: var(--very-dark-violet);
+}
+
+.card-link a {
+  margin-left: auto;
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+button.copied {
+  background-color: var(--dark-violet);
 }
 
 .stadictics {
@@ -166,7 +206,7 @@ header a:focus {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  min-height: 80rem;
+  padding-top: 15rem;
 }
 
 .stadictics-text {
@@ -175,6 +215,7 @@ header a:focus {
   align-items: center;
   text-align: center;
   max-width: 55ch;
+  margin-bottom: 10rem;
 }
 
 .stadictics h2 {
@@ -278,8 +319,8 @@ footer .container {
   justify-content: space-between;
 }
 
-footer img {
-  fill: var(--cyan) !important;
+.container-footer .logo {
+  color: white;
 }
 
 footer .info-page {
