@@ -16,8 +16,9 @@ form.addEventListener("submit", e => {
             a.href = shortLink
             a.textContent = shortLink
             const button = document.createElement("button")
+            const hr = document.createElement("hr")
             button.textContent = "Copy"
-            article.append(p, a, button)
+            article.append(p, hr, a, button)
             container.append(article)
 
             button.addEventListener("click", (e) => {

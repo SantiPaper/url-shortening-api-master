@@ -199,6 +199,8 @@ button.copied {
 
 .stadictics {
   background-color: var(--light-gray);
+  min-height: 85rem;
+  padding-top: 15rem;
 }
 
 .stadictics .container {
@@ -206,7 +208,6 @@ button.copied {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding-top: 15rem;
 }
 
 .stadictics-text {
@@ -230,7 +231,6 @@ button.copied {
 .cards {
   display: flex;
   gap: 3rem;
-  height: 50rem;
 }
 
 .cards article {
@@ -238,8 +238,8 @@ button.copied {
   flex-direction: column;
   align-items: flex-start;
   background-color: white;
-  width: 40rem;
-  height: 30rem;
+  max-width: 40rem;
+  max-height: 30rem;
 }
 
 .cards article div {
@@ -364,4 +364,182 @@ footer a {
 .attribution {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 80rem;
+  }
+  .hero h1 {
+    font-size: 6rem;
+  }
+  .hero-ilustration {
+    width: 35rem;
+  }
+
+  .cards article {
+    min-width: 25rem;
+    max-height: 25rem;
+  }
+
+  .cards article div {
+    justify-content: center;
+    margin-top: -6rem;
+  }
+
+  .cards article img {
+    transform: translateY(-50%);
+    background-color: var(--dark-violet);
+    border-radius: 99rem;
+  }
+
+  .stadictics h3 {
+    font-size: 2rem;
+  }
+
+  .stadictics p {
+    color: var(--grayish-violet);
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 50rem;
+  }
+
+  .hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero .container div {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 40rem;
+  }
+
+  .hero-ilustration {
+    order: 1;
+    width: 30rem;
+    margin-left: 5rem;
+  }
+
+  .hero h1 {
+    margin-top: 3rem;
+    font-size: 4rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  .short-links .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .short-links form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .short-links input {
+    width: 95%;
+    font-size: 1.3rem;
+  }
+
+  .short-links button {
+    margin: 0;
+    margin-top: 2rem;
+    width: 95%;
+  }
+
+  .card-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 2rem 0;
+    align-items: center;
+  }
+
+  .card-link hr {
+    width: 100%;
+    color: var(--grayish-violet);
+    margin-bottom: 0.5rem;
+  }
+
+  .card-link p {
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .card-link a {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .stadictics {
+    padding-top: 4rem;
+    padding: 0 3rem;
+    min-height: 14rem;
+  }
+
+  .stadictics h2 {
+    margin-top: 2rem;
+  }
+
+  .stadictics article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .stadictics article img {
+    margin: 0;
+  }
+
+  .stadictics .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 12rem;
+  }
+  .stadictics article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .card-2,
+  .card-3 {
+    transform: translateY(none);
+  }
+
+  .get-started h2 {
+    font-size: 2.5rem;
+  }
+
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 4rem;
+  }
+
+  .container-footer div {
+    margin-top: 4rem;
+  }
 }
