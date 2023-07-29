@@ -41,6 +41,5 @@ const mainMenuElement = document.getElementById("nav")
 
 toggleMenuElement.addEventListener("click", (e) => {
     mainMenuElement.classList.toggle("showNav")
-    console.log(e);
 })
 
