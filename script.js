@@ -39,15 +39,8 @@ form.addEventListener("submit", e => {
 const toggleMenuElement = document.getElementById("toggle-menu")
 const mainMenuElement = document.getElementById("nav")
 
-toggleMenuElement.addEventListener("click", () => {
+toggleMenuElement.addEventListener("click", (e) => {
     mainMenuElement.classList.toggle("showNav")
+    console.log(e);
 })
 
-
-
-
-/* <article class="card-link">
-            <p></p>
-            <a href="#"> </a>
-            <button>Copy</button>
-          </article> */
