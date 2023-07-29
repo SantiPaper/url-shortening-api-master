@@ -36,6 +36,13 @@ form.addEventListener("submit", e => {
         })
 })
 
+const toggleMenuElement = document.getElementById("toggle-menu")
+const mainMenuElement = document.getElementById("nav")
+
+toggleMenuElement.addEventListener("click", () => {
+    mainMenuElement.classList.toggle("showNav")
+})
+
 
 
 
