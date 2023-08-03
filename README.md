@@ -1,15 +1,16 @@
 <div align="center">
- <h1>Adviency
+ <h1>Shortly
+ </h1>
+ <h3>Proyecto creado con JavaScript Vanilla.</h3>
   
  <small>Por Santiago Vitelli</small>
- </h1>
 </div>
 
-<p>Proyecto creado para asentar mis conocimientos con TypeScript(idea sacada del twitter de goncy).</p>
+<br />
 
 ## 💻 ¿El proyecto está deployado?
 
-Si, el proyecto esta deployado en vercel, el link es el siguiente : https://adviency-80nnq2rya-santipaper.vercel.app/
+Si, el proyecto esta deployado en vercel, el link es el siguiente : https://url-shortening-api-master-six.vercel.app/
 
 <br />
 
@@ -18,7 +19,7 @@ Si, el proyecto esta deployado en vercel, el link es el siguiente : https://advi
 Primero, clonarlo con:
 
 ```bash
-git clone https://github.com/SantiPaper/adviency
+git clone https://github.com/SantiPaper/url-shortening-api-master
 ```
 
 Una vez clonado, abrir el directorio raiz ejecutar `npm install` y una vez que termine, `npm run dev`.
@@ -27,6 +28,6 @@ Una vez clonado, abrir el directorio raiz ejecutar `npm install` y una vez que t
 
 ## 🧱 ¿Que tecnologias se usaron?
 
-React - TypeScript y styled-components.
+Html,Css,JavaScipt
 
 <br />
